@@ -1,0 +1,16 @@
+prefix=$HOME/ports/bin:$HOME/ports/sbin:$HOME/ports/lib/postgresql96/bin
+prefix=$HOME/ports/Library/Frameworks/Python.framework/Versions/3.6/bin/:$prefix
+prefix=/Applications/Docker.app/Contents/Resources/bin:$prefix
+prefix=/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin:$prefix
+export PATH=$prefix:$PATH
+
+if [[ $(which go) ]]; then
+  prefix=$(go env | grep GOPATH | sed 's/GOPATH=\"//' | sed s/\"//)/bin
+  export PATH=$prefix:$PATH
+fi
+
+export LPATH=$HOME/ports/lib:$LDPATH
+export MANPATH=$HOME/ports/share/man:$MANPATH
+
+## Setup Python
+export PYTHONSTARTUP=~/.pythonrc
