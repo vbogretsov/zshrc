@@ -4,12 +4,14 @@ alias rd=rmdir
 alias md='mkdir -p'
 alias ls='ls -G'
 alias grep='grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
+alias rgrep='grep -nr'
 alias pygrep='grep --include="*.py"'
 alias pyrgrep='pygrep -nr'
 alias gogrep='grep --include="*.go"'
 alias gorgrep='gogrep -nr'
 alias cgrep='grep --include="*.c" --include="*.h"'
 alias crgrep='cgrep -nr'
+alias gut=git
 
 # -='cd -'
 # ...=../..

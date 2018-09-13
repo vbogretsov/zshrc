@@ -1,8 +1,16 @@
 #zmodload zsh/zprof
 
+LANG=en_US.UTF-8
+
+PAGER=less
+EDITOR=vim
+
+#LSCOLORS=exfxcxdxbxexedabaxacad
+
 PROMPT='❯❯ '
 
 ZSH=~/.config/zsh
+AUTOENV_FILES=(.venv/bin/activate environ)
 
 autoload -U compaudit compinit
 
@@ -18,7 +26,7 @@ for config_file in $ZSH/lib/*.zsh; do
 done
 
 if [[ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ]]; then
-  compinit -i
+  compinit -u
 else
   compinit -C
 fi
@@ -30,5 +38,11 @@ done
 
 source ${ZSH}/aliases
 source ${ZSH}/path
+
+export KEYTIMEOUT=1
+
+if [ -z "$TMUX" ]; then
+  tmux -2 attach -t main || tmux -2 new -s main
+fi
 
 #zprof
