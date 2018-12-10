@@ -2,10 +2,14 @@
 
 LANG=en_US.UTF-8
 
-PAGER=less
-EDITOR=vim
+export HISTSIZE=10000
 
-#LSCOLORS=exfxcxdxbxexedabaxacad
+PAGER=less
+EDITOR=nvim
+
+export CLICOLOR=1
+#               1 2 3 4 5 6 7 8 9 10
+export LSCOLORS=exfxcxdxbxgxgxbxbxexex
 
 PROMPT='❯❯ '
 
