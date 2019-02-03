@@ -1,11 +1,9 @@
 #zmodload zsh/zprof
 
-LANG=en_US.UTF-8
-
+export LANG=en_US.UTF-8
 export HISTSIZE=10000
-
-PAGER=less
-EDITOR=nvim
+export PAGER=less
+export EDITOR=nvim
 
 export CLICOLOR=1
 #               1 2 3 4 5 6 7 8 9 10
