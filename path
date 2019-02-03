@@ -1,14 +1,6 @@
-prefix=$HOME/ports/bin:$HOME/ports/sbin:$HOME/ports/lib/postgresql96/bin
-prefix=$HOME/ports/Library/Frameworks/Python.framework/Versions/3.6/bin/:$prefix
-prefix=/Applications/Docker.app/Contents/Resources/bin:$prefix
-prefix=/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin:$prefix
-export PATH=$prefix:$PATH
+prefix=$HOME/go/bin:$HOME/ports/bin:$HOME/ports/sbin:$HOME/ports/lib/postgresql11/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
-if [[ $(which go) ]]; then
-  prefix=$(go env | grep GOPATH | sed 's/GOPATH=\"//' | sed s/\"//)/bin
-  export PATH=$prefix:$PATH
-fi
-
+export PATH=$prefix
 export LPATH=$HOME/ports/lib:$LDPATH
 export MANPATH=$HOME/ports/share/man:$MANPATH
 
