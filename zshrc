@@ -14,6 +14,8 @@ PROMPT='❯❯ '
 ZSH=~/.config/zsh
 AUTOENV_FILES=(.venv/bin/activate environ)
 
+setopt rm_star_silent
+
 autoload -U compaudit compinit
 
 [[ -f ~/.zcompdump ]] && zcompile -R ~/.zcompdump
