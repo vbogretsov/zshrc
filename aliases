@@ -14,6 +14,11 @@ alias crgrep='cgrep -nr'
 alias gut=git
 alias pt=pytest
 alias nv=nvim
+alias py=python
+alias dr=docker
+alias dp='docker compose'
+alias kl=kubectl
+alias ll='ls -lh'
 
 # -='cd -'
 # ...=../..
