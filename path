@@ -1,4 +1,4 @@
-export PATH=$HOME/go/bin:$HOME/Library/Python/3.9/bin:/opt/local/lib/postgresql13/bin:/opt/local/bin:/opt/local/sbin:$PATH
+export PATH=$HOME/go/bin:/usr/local/opt/llvm/bin:$PATH
 
 ## Setup Python
 #export PYTHONSTARTUP=~/.pythonrc

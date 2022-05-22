@@ -41,13 +41,13 @@ for plugin in $ZSH/plugins/*/*.plugin.zsh; do
   source $plugin
 done
 
-source ${ZSH}/aliases
-source ${ZSH}/path
-
 export KEYTIMEOUT=1
 
 if [ -z "$TMUX" ]; then
   tmux -2 attach -t main || tmux -2 new -s main
+else
+  source ${ZSH}/aliases
+  source ${ZSH}/path
 fi
 
 #zprof
