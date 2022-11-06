@@ -13,12 +13,14 @@ alias cgrep='grep --include="*.c" --include="*.h"'
 alias crgrep='cgrep -nr'
 alias gut=git
 alias pt=pytest
-alias nv=nvim
 alias py=python
-alias dr=docker
+alias d=docker
 alias dp='docker compose'
-alias kl=kubectl
-alias ll='ls -lh'
+alias k=kubectl
+alias ll='ls -lhG'
+alias la='ls -lahG'
+alias gs='git status'
+alias gb='git branch'
 
 # -='cd -'
 # ...=../..
