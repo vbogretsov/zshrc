@@ -13,6 +13,7 @@ alias cgrep='grep --include="*.c" --include="*.h"'
 alias crgrep='cgrep -nr'
 alias gut=git
 alias pt=pytest
+alias python=python3
 alias py=python
 alias d=docker
 alias dp='docker compose'
