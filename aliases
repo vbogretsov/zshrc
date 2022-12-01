@@ -21,6 +21,7 @@ alias k=kubectl
 alias ll='ls -lhG'
 alias la='ls -lahG'
 alias gs='git status'
+alias gd='git diff'
 alias gb='git branch'
 
 # -='cd -'
