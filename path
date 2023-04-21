@@ -1,5 +1,5 @@
 #export PATH=$HOME/go/bin:/usr/local/opt/llvm/bin:$PATH
-export PATH=$HOME/.cargo/bin:$HOME/go/bin:opt/pkg/go-bin/bin:/opt/pkg/bin:/opt/pkg/sbin:$PATH
+export PATH=$HOME/.cargo/bin:$HOME/go/bin:/opt/pkg/go-bin/bin:/opt/pkg/local/bin:/opt/pkg/bin:/opt/pkg/sbin:$PATH
 
 ## Setup Python
 #export PYTHONSTARTUP=~/.pythonrc
