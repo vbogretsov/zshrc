@@ -13,7 +13,6 @@ alias cgrep='grep --include="*.c" --include="*.h"'
 alias crgrep='cgrep -nr'
 alias gut=git
 alias pt=pytest
-alias python=python3
 alias py=python
 alias d=docker
 alias dp='docker compose'
@@ -24,6 +23,8 @@ alias gs='git status'
 alias gd='git diff'
 alias gb='git branch'
 alias neo='neovide --frame buttonless'
+alias tf=terraform
+alias g=gcloud
 
 # -='cd -'
 # ...=../..
