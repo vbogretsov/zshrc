@@ -48,7 +48,6 @@ if [ -z "$TMUX" ] && [ -z $NVIM ]; then
   tmux -2 attach -t main || tmux -2 new -s main
 else
   source ${ZSH}/aliases
-  source ${ZSH}/path
 fi
 
 #zprof
